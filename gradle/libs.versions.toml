@@ -1,0 +1,14 @@
+[versions]
+android-gradle-plugin = "8.0.0"
+kotlin-android = "1.8.0"
+core-ktx = "1.9.0"
+appcompat = "1.6.1"
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+com-android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-android" }
